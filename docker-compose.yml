@@ -6,5 +6,4 @@ services:
       - .:/workspace
     working_dir: /workspace
     command: >
-      bash -c "pandoc -t beamer presentation.md -o presentation.pdf
-      && pandoc -t slidy -s presentation.md -o presentation.html"
+      bash -c "pandoc -t slidy -s presentation.md -o presentation.html"
